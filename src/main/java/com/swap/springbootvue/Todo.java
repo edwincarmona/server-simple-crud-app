@@ -2,13 +2,12 @@ package com.swap.springbootvue;
 
 import lombok.*;
 
-import javax.persistence.Id;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Entity;
+import javax.persistence.*;
 
 @Entity
 @Data
 @NoArgsConstructor
+@Table(name = "todos")
 public class Todo {
 
     @Id
